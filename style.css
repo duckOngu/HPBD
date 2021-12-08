@@ -74,6 +74,12 @@ button:focus {
     outline: none !important;
 }
 
+.fade {
+    top:-100%;
+    -webkit-animation: fadein 1s forwards;
+    animation: fadein 1s forwards;
+}
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
