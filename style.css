@@ -1,0 +1,75 @@
+body {
+    background: linear-gradient(to right, white, pink, rgb(243, 129, 192));
+}
+
+.content {
+    background-color: whitesmoke;
+    margin-left: 25%;
+    width: 50%;
+    margin-top: 10vw;
+    height: 30vw;
+    border-radius: 30px;
+    box-shadow: 1vw 1vw #000;
+    text-align: center;
+}
+
+.age {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+}
+
+.age h1 span {
+    font-size: 10vw;
+    background: -webkit-linear-gradient(right, #eee, rgb(228, 130, 223));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.age h1 {
+    background-color: blue;
+    border-radius: 30px;
+    box-shadow: 0.5vw 0.5vw grey;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.cake {
+    margin-top: 1vw;
+}
+
+.cake button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: url("flame.cur"), auto;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
