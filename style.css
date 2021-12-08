@@ -47,6 +47,29 @@ body {
     cursor: url("flame.cur"), auto;
 }
 
+#cake {
+    width: 20vw;
+}
+
+@media only screen and (max-width:1000px){
+    .content {
+        background-color: whitesmoke;
+        margin-left: 5%;
+        width: 90%;
+        margin-top: 30vw;
+        height: 90vw;
+    }
+
+    .age h1 span {
+        font-size: 100px;  
+    }
+
+    #cake {
+        width: 48vw;
+    }
+    
+}
+
 button:focus {
     outline: none !important;
 }
