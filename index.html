@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
+   <div class="sky"><img id="sky" src="sky.jpg"></div>
    <div class="content">
       <div class="age">
          <h1>
@@ -19,6 +19,7 @@
       <div class="cake">
          <button onclick="birthday()"><img id="cake" src="birthdaybefore.png"></button>
       </div>
+      <audio  id="audio" src="hpbd.mp3"></audio>
    </div> 
 
    <script>
@@ -28,6 +29,11 @@
          document.getElementById("n").innerHTML = 20;
 
          document.getElementById("n").setAttribute("class", "fade");
+
+         document.getElementById("sky").style.display = "block";
+         document.getElementById("sky").setAttribute("class", "fade");
+
+         document.getElementById("audio").play();
       }
    </script>
 
