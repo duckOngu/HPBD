@@ -3,6 +3,8 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    padding: 0;
+    margin: 0;
 }
 
 .content {
@@ -16,7 +18,15 @@ body {
     text-align: center; 
 }
 
+#click {
+    position: absolute;
+    top: 18vw;
+    left: 52vw;
+    width: 20vw;
+}
+
 .sky {
+    margin:0;
     top: 0;
     left: 0;
     position: absolute;
@@ -68,6 +78,12 @@ body {
     width: 20vw;
 }
 
+@media only screen and (max-width:1600px){
+    .sky img{
+        width: 200%;
+    }
+}
+
 @media only screen and (max-width:1000px){
     .content {
         background-color: whitesmoke;
@@ -88,6 +104,12 @@ body {
     .sky img {
         width: 300%;
         display: none;
+    }
+
+    #click {
+        left: 63vw;
+        top: 70vw;
+        width: 30vw;
     }
     
 }
