@@ -94,9 +94,18 @@ body {
     background: linear-gradient(to right, rgba(255, 255, 255, 0.137), rgba(255, 0, 0, 0.1), rgba(255, 166, 0, 0.1), rgba(255, 255, 0, 0.1), rgba(0, 128, 0, 0.1), rgba(255, 255, 255, 0.096));
 }
 
-@media only screen and (max-width:1600px){
+@media only screen and (max-width:1600px) {
     .sky img{
         width: 200%;
+    }
+    
+    #msg {
+        font-size: 20px;
+        text-shadow: black 1px 1px;
+    }
+    
+    .content {
+        height: 50vw;
     }
 }
 
