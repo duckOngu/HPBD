@@ -54,7 +54,7 @@ body {
 }
 
 .age h1 {
-    background-color: blue;
+    background: linear-gradient(to top, blue, rgb(71, 88, 238) , rgb(179, 179, 255));
     border-radius: 30px;
     box-shadow: 0.5vw 0.5vw grey;
     padding-left: 1vw;
@@ -76,6 +76,22 @@ body {
 
 #cake {
     width: 20vw;
+}
+
+#msg {
+    position: absolute;
+    z-index: 1;
+    top: 1.1vw;
+    padding: 1vw;
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+    color: white;
+    text-shadow: rgb(39, 38, 46) 5px 5px;
+    display: none;
+    border-radius: 49% 44% 20% 62% / 22% 79% 58% 63%; 
+    font-size: 40px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.137), rgba(255, 0, 0, 0.1), rgba(255, 166, 0, 0.1), rgba(255, 255, 0, 0.1), rgba(0, 128, 0, 0.1), rgba(255, 255, 255, 0.096));
 }
 
 @media only screen and (max-width:1600px){
@@ -111,7 +127,34 @@ body {
         top: 70vw;
         width: 30vw;
     }
+
+    #msg {
+        top: 3vw;
+        font-size: 15px;
+        text-shadow:rgb(39, 38, 46) 1px 1px;
+        width:90%;
+        margin-left: 5%;
+    }
     
+}
+
+@media only screen and (max-width:1000px) and (orientation: landscape) {
+    .content{
+        margin-top: 13vw;
+        height: 30vw;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #cake {
+        width: 40vw;
+    }
+
+    #click {
+        top: 15vw;
+        left: 75vw;
+        width: 20vw;
+    }
 }
 
 button:focus {
@@ -120,8 +163,8 @@ button:focus {
 
 .fade {
     top:-100%;
-    -webkit-animation: fadein 5s forwards;
-    animation: fadein 5s forwards;
+    -webkit-animation: fadein 7s forwards;
+    animation: fadein 7s forwards;
 }
 
 @keyframes fadein {

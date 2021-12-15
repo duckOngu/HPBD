@@ -8,6 +8,7 @@
 </head>
 <body>
    <div class="sky"><img id="sky" src="sky.jpg"></div>
+   <div id="msg"></div>
    <div class="content">
       <img id="click" src="click.png">
       <div class="age">
@@ -24,7 +25,11 @@
    </img> 
 
    <script>
+      var count = 0;
+      
       function birthday(){
+         if(count === 1) return;
+
          document.getElementById("cake").src = "burning.gif";
 
          document.getElementById("n").innerHTML = 20;
@@ -35,6 +40,23 @@
          document.getElementById("sky").setAttribute("class", "fade");
 
          document.getElementById("audio").play();
+
+         var s = "Chúc Yến Võ có một sinh nhật vui vẻ, tuổi mới thêm nhiều thành công mới. Deadline ít hơn không dí nhèo nữa. Đặc biệt là sẽ có một kì thi tuyệt dời. Happy Birthday!";
+
+         var i = 0;
+
+         document.getElementById("msg").style.display = "block";
+
+         function type(){
+            if(i < s.length){
+               document.getElementById("msg").innerHTML+=s[i++];
+               setTimeout(type, 30);
+            }
+         }
+
+         type();
+
+         count = 1;
       }
    </script>
 
